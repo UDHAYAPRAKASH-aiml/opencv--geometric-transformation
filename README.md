@@ -1,135 +1,113 @@
 # Geometric Transformations Using OpenCV
 
+---
+
 ## Aim
-To develop a Python program using OpenCV to perform various geometric transformations on an image.
 
-The transformations included in this project are:
+To write a Python program using OpenCV to perform various geometric transformations on an image.
 
-- Image Translation
-- Image Scaling (Resizing)
-- Image Shearing
-- Image Reflection (Flipping)
-- Image Rotation
+The program performs the following operations:
 
----
-
-## Software Requirements
-
-- Python 3.7
-- Anaconda
-- Jupyter Notebook / VS Code
-- OpenCV (`cv2`)
-- NumPy
-- Matplotlib
+- Image Translation  
+- Image Scaling (Resizing)  
+- Image Shearing  
+- Image Reflection (Flipping)  
+- Image Rotation  
 
 ---
 
-## Description
+##  Software Used
 
-Geometric transformations are image processing techniques used to modify the spatial orientation, size, position, and shape of an image. These operations are commonly used in computer vision, image augmentation, and preprocessing applications.
-
-This project demonstrates the implementation of basic geometric transformations using OpenCV and Python.
+- Anaconda – Python 3.7  
+- Jupyter Notebook / VS Code  
+- OpenCV (`cv2`)  
+- NumPy  
+- Matplotlib  
 
 ---
 
-## Algorithm
+##  Algorithm
 
-### Step 1
-Import the required libraries:
-- OpenCV
-- NumPy
-- Matplotlib
+### Step 1:
+Import the required libraries: OpenCV, NumPy, and Matplotlib.
 
-### Step 2
+### Step 2:
 Read the input image in color mode.
 
----
+### Step 3: Image Translation
+- Create a translation matrix to shift the image  
+- Move the image 50 pixels to the right and 80 pixels down  
+- Apply transformation using `cv2.warpAffine()`  
+- Display original and translated images  
 
-## Transformations Performed
+### Step 4: Image Scaling
+- Resize the image to 0.5× (downscale)  
+- Resize the image to 2× (upscale)  
+- Use `cv2.resize()`  
+- Display original, downscaled, and upscaled images  
 
-### 1. Image Translation
-- Create a translation matrix
-- Shift the image:
-  - 50 pixels to the right
-  - 80 pixels downward
-- Apply the transformation using `cv2.warpAffine()`
-- Display the original and translated images
-
----
-
-### 2. Image Scaling
-- Resize the image to:
-  - 0.5× (downscale)
-  - 2× (upscale)
-- Use `cv2.resize()`
-- Display original, downscaled, and upscaled images
-
----
-
-### 3. Image Shearing
+### Step 5: Image Shearing
 - Create transformation matrices for:
-  - Horizontal shearing
-  - Vertical shearing
-- Apply transformations using `cv2.warpAffine()`
-- Display the sheared images
+  - Horizontal shearing  
+  - Vertical shearing  
+- Apply transformations using `cv2.warpAffine()`  
+- Display original and sheared images  
+
+### Step 6: Image Reflection
+- Perform flipping using `cv2.flip()`:
+  - Horizontal reflection  
+  - Vertical reflection  
+  - Both axes  
+- Display all reflected images  
+
+### Step 7: Image Rotation
+- Create rotation matrices for:
+  - 45° rotation  
+  - 90° rotation  
+- Use `cv2.getRotationMatrix2D()` and `cv2.warpAffine()`  
+- Display original and rotated images  
 
 ---
 
-### 4. Image Reflection
-Perform image flipping using `cv2.flip()`:
-- Horizontal reflection
-- Vertical reflection
-- Reflection across both axes
+##  Program
 
-Display all reflected images.
+### Developed By:
+**Name:** ____________________________  
 
----
-
-### 5. Image Rotation
-- Rotate the image by:
-  - 45°
-  - 90°
-- Use:
-  - `cv2.getRotationMatrix2D()`
-  - `cv2.warpAffine()`
-- Display the rotated images
+### Register No:
+____________________________  
 
 ---
 
-## Output
+##  Output
 
 ### Image Translation
-- Original Image
-- Translated Image
+- Original image is displayed  
+- Translated image (shifted right and down) is displayed  
 
 ### Image Scaling
-- Original Image
-- Downscaled Image
-- Upscaled Image
+- Original image is displayed  
+- Downscaled image (0.5×) is displayed  
+- Upscaled image (2×) is displayed  
 
 ### Image Shearing
-- Original Image
-- Horizontally Sheared Image
-- Vertically Sheared Image
+- Original image is displayed  
+- Horizontally sheared image is displayed  
+- Vertically sheared image is displayed  
 
 ### Image Reflection
-- Horizontally Flipped Image
-- Vertically Flipped Image
-- Both-Axis Flipped Image
+- Original image is displayed  
+- Horizontally flipped image is displayed  
+- Vertically flipped image is displayed  
+- Both-axis flipped image is displayed  
 
 ### Image Rotation
-- 45° Rotated Image
-- 90° Rotated Image
+- Original image is displayed  
+- 45° rotated image is displayed  
+- 90° rotated image is displayed  
 
 ---
 
-## Result
+##  Result
 
-Thus, various geometric transformations such as translation, scaling, shearing, reflection, and rotation were successfully performed using OpenCV. These transformations demonstrate how images can be spatially manipulated for different computer vision applications.
-
----
-
-## Developed By
-
-**Name:** udhaya prakash v 
-**Register Number:** 212224240177
+Thus, various geometric transformations such as translation, scaling, shearing, reflection, and rotation are successfully performed using OpenCV. These transformations demonstrate how images can be spatially manipulated for different computer vision applications.
